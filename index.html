@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carrito PC</title>
 </head>
 <body>
-    
+    <h1>🖥️ Arma tu PC</h1>
+
+    <div class="container">
+
+        <!-- IZQUIERDA: COMPONENTES -->
+        <div class="productos">
+            <h2>Componentes</h2>
+
+            <div class="item" draggable="true" data-precio="250">
+                💾 RAM - $250
+            </div>
+
+            <div class="item" draggable="true" data-precio="500">
+                ⚙️ CPU - $500
+            </div>
+
+            <div class="item" draggable="true" data-precio="800">
+                🎮 GPU - $800
+            </div>
+
+            <div class="item" draggable="true" data-precio="300">
+                💽 SSD - $300
+            </div>
+
+        </div>
+
+        <!-- DERECHA: CARRITO -->
+        <div class="carrito" id="carrito">
+            <h2>🛒 Carrito</h2>
+            <p>Arrastra aquí</p>
+        </div>
+
+    </div>
+
+    <!-- TOTAL -->
+    <div class="total">
+        Total: $<span id="total">0</span>
+    </div>
+    <script src="js/app.js"></script>
 </body>
 </html>
